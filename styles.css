@@ -1,0 +1,133 @@
+ /* The asterisk is used as the universal
+ element selector, targeting all HTML elements on the page */
+* {
+ 
+	/* The border-box property clips the display to the area behind the content,
+	padding, and border; similar to the padding-box property except that the image will display
+	behind a border. */
+	box-sizing: border-box;
+	font-family: arial;
+ 
+}
+
+/* HTML ELEMENT SELECTORS =============================================================================================== */
+
+/* Styles for the Paragraph element selector <p> */
+p {
+	
+	font-size: 18px;
+	text-align: center;
+	
+}
+
+/* Styles for the body */
+body{
+
+	/* To configure a basic linear gradient, code the "linear-gradient" function
+	as the value of the background-image property. Indicate the direction of the
+	gradient by coding the keyword phrase "to bottom", "to top", "to left", "to right",
+	folled by two or more color values to indicate the color stops */
+	background-image: linear-gradient(to bottom, #ED61C3, #61EDC6);
+	background-repeat: no-repeat;
+	margin-bottom: 500px;
+
+}
+
+/* Styles for the footer */
+footer {
+
+	font-size: 13px;
+	margin: 40px;
+
+}
+
+/* Styles for the list on main page */
+ul {
+
+	list-style-position: inside;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* SPAN CLASS SELECTORS ================================================================================================= */
+
+/* We don't need the font-weight or font-size, so seperate
+HTML selector for the header */
+.tealheader{
+	
+	color: #04635D;
+}
+
+
+/* DIV ID SELECTORS ======================================================================================================= */
+
+/* Vaporwave sun image at top of page */
+#vaporsun{
+
+	min-height: 292px;
+	min-width: 263px;
+	
+	background-image: url("images/graphic1resized.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+#virtualonot{
+
+	min-height: 243px;
+	min-width: 265px;
+	
+	background-image: url("images/virtualon2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+/* White area on the center of the page */
+#wrapper{
+
+	/* Centering all Text */
+	text-align: center;
+	background-color: #FFFFFF;
+	
+	/* This code makes the sides of this element smaller, showing more of the
+	website <body> element */
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	box-shadow: 15px 15px 15px #828282;
+	
+	/*
+	min-width: 584px;
+	min-height: 590px;
+	*/
+	
+	/* background-image: linear-gradient(to bottom, #fc6ff5, #FFFFFF); */
+	background-repeat: no-repeat;
+}
+
+
+/* CSS MEDIA QUERIES ======================================================================================================== */
+
+/* For Galaxy S7 and Galaxy Note 8 Testing (Probably doesn't work) */
+@media (max-width: 360px){
+	
+	#wrapper{
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+	
+}
+
+
+/* If the screen is bigger than 1024 px, these styles apply*/
+@media (min-width: 1024px){
+	
+	#wrapper{
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+}
